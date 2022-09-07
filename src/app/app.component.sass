@@ -2,12 +2,14 @@
   box-sizing: border-box
 
 html, body
-  margin: 0
   padding: 0
   background-image: url("../assets/img/back.jpg")
   border: 0
-.container
+  margin: 0
 
+
+
+.container
   border: 20px solid
   color: rgb(255, 255, 255)
   justify-content: center
@@ -25,6 +27,7 @@ html, body
   justify-content: center
   gap: 32px
   margin: 20px
+  flex-direction: row
 
 
 
@@ -141,6 +144,7 @@ html, body
   background-color: rgb(9, 121, 158)
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
   border: 0
+  margin: 0 0 20px
 
 
 .main
@@ -152,30 +156,65 @@ html, body
 
 .container-top
   display: flex
-  justify-content: center
-  gap: 32px
+  justify-content: flex-start
+  gap: 14px
+  padding: 20px
 
-.down-container
+.right-container
   border: 1px solid black
   display: flex
+  flex-direction: row
   width: 250px
   justify-content: center
-  text-align: center
-  margin: 0
+  margin: 0px 0px 0px 0px
 
 
 h4
   margin: 0
 
+
+
+div.container-right
+    display: flex
+    border: 1px solid black
+    gap: 32px
+    margin: 20px
+    flex-direction: row
+    flex-wrap: nowrap
+    align-content: center
+    width: 200px
+    height: 190px
+    float: right
+
+
+
+div.right
+  font-family: Constantia
+  color: #231F20
+
+
 .last
+  text-align: center
+  font-family: Ebrima
+  color: #231F20
+
+.last-down-container
   display: flex
-  width: 910px
+  width: 630px
   height: 70px
-  border: 1px solid black
-  display: flex
+  margin: 20px
+  gap: 32px
+  flex-direction: row
   justify-content: center
+  border: 1px solid black
 
-body
 
+@media (max-width: 1199px)
+  html
+    font-size: 12px
+
+@media (max-width: 991px)
+  html
+    font-size: 10px
 
 
